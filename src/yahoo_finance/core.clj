@@ -35,11 +35,9 @@
         description (h/text (first (h/select (nth tds 2) [:span])))]
     (->Company code exchange name description)))
 
-(def next-page-selector
-  [:#listTable :> :div.yjListTab :> :p :> :span.listNext :> :a])
-
 (defn get-companies-start-with [s]
-  (let [resource (fetch-url (aiueo-url s))]
+  (let [resource (fetch-url (aiueo-url s))
+        next-page-selector [:#listTable :> :div.yjListTab :> :p :> :span.listNext :> :a]]
     (loop [result (map parse-company (select-companies resource))
            rest-page (h/select resource next-page-selector)]
       (if (empty? rest-page)
