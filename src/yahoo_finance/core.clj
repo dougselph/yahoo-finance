@@ -5,9 +5,8 @@
 (defrecord Company [code exchange name description])
 (def root-url "http://stocks.finance.yahoo.co.jp")
 (def base-url (str root-url  "/stocks/qi/?js="))
-(def aiueo (s/split (str "あいうえお" "かきくけこ" "さしすせそ" "たちつてと"
-                         "なにぬねの" "はひふへほ" "まみむめも" "やゆよ"
-                         "らりるれろ" "わ")
+(def aiueo (s/split (str "あいうえお" "かきくけこ" "さしすせそ" "たちつてと" "なにぬねの"
+                         "はひふへほ" "まみむめも" "やゆよ" "らりるれろ" "わ")
                     #""))
 
 (defn fetch-url [url]
