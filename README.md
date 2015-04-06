@@ -6,7 +6,7 @@ A Clojure library designed to parse Yahoo Finance.
 
 ```clojure
 > (def companies (get-all-companies))
-> (clojure.pprint/pprint (first (get-all-companies)))
+> (clojure.pprint/pprint (first companies))
 {:code "3076",
  :exchange "東証1部",
  :name "あい　ホールディングス(株)",
