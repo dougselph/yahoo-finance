@@ -1,4 +1,4 @@
-(defproject yahoo-finance "0.1.0-SNAPSHOT"
+(defproject yahoo-finance "0.2.0"
   :description "Parse Yahoo Finance"
   :url "https://github.com/neruner/yahoo-finance"
   :scm {:name "git"
