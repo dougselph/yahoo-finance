@@ -4,6 +4,8 @@ A Clojure library designed to parse Yahoo Finance.
 
 ## Usage
 
+[![Clojars Project](http://clojars.org/yahoo-finance/latest-version.svg)]
+
 ```clojure
 > (def companies (get-all-companies))
 > (clojure.pprint/pprint (first companies))
