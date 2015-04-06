@@ -4,7 +4,7 @@ A Clojure library designed to parse Yahoo Finance.
 
 ## Usage
 
-[![Clojars Project](http://clojars.org/yahoo-finance/latest-version.svg)]
+[![Clojars Project](http://clojars.org/yahoo-finance/latest-version.svg)](http://clojars.org/yahoo-finance)
 
 ```clojure
 > (def companies (get-all-companies))
